@@ -52,7 +52,6 @@ ul li a:hover {
 .box button {
     width: 200px;
     cursor: pointer;
-    /* background: rgba(0,191,255,1); */
     background: rgba(0, 191, 255, 1);
     font-size: 15px;
     color: #fff;
@@ -71,36 +70,48 @@ ul li a:hover {
     grid-gap: 20px;
 }
 
-.servince {
+.service {
     grid-column: 1/3;
     text-align: center;
 }
-.servince1,
-.servince2,
-.servince3,
-.servince4 {
+.service1,
+.service2,
+.service3,
+.service4 {
     background: #eee;
     height: 40vh;
 }
 
-.servince1 {
+.service1 {
     background: url(https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083378_960_720.jpg);
     background-size: cover;
 }
 
-.servince2 {
+.service2 {
     background: url(https://cdn.pixabay.com/photo/2016/11/22/06/32/girl-1848478_960_720.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.servince3 {
+.service3 {
     background: url(https://cdn.pixabay.com/photo/2016/11/08/05/25/steak-1807532_960_720.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
-.servince4 {
+.service4 {
     background: url(https://cdn.pixabay.com/photo/2018/02/07/12/01/restaurant-3136935_960_720.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 .text {
@@ -118,4 +129,49 @@ ul li a:hover {
     background: rgba(0, 191, 255);
     border: none;
     margin-bottom: 20px;
+}
+
+.brr {
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+.brl {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.customer {
+    height: 40vh;
+    background: url('https://cdn.pixabay.com/photo/2016/11/08/06/45/restaurant-1807617_960_720.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+iframe {
+    width: 100%;
+    height: 49vh;
+}
+
+footer {
+    padding: 30px;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;  
+}
+
+@media(max-width: 768px) {
+    .service1,
+    .service2,
+    .service3,
+    .service4,
+    .customer,
+    .map {
+        grid-column: 1/3;
+    }
 }
